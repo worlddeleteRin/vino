@@ -38,6 +38,12 @@
   font-family: "nunito-extrabold";
   src: url("../fonts/Nunito-ExtraBold.ttf");
 }
+.def_width {
+  max-width: 1200px;
+  margin: 20 auto;
+  width: 90%;
+}
+
 .center {
   text-align: center;
 }
@@ -117,8 +123,13 @@ body {
   margin: 0px auto;
 }
 
+.main_header_content.standart {
+  width: 90%;
+  margin: auto;
+}
+
 .main_header_logo {
-  width: 30%;
+  width: 20%;
   width: 70px;
 }
 .main_header_logo img {
@@ -127,15 +138,22 @@ body {
   object-fit: contain;
 }
 
+.main_header_logo.standart {
+  height: 90%;
+}
+.main_header_logo.standart img {
+  max-height: 85%;
+}
+
 .main_header_menu {
-  width: 70%;
+  width: 75%;
   display: flex;
   justify-content: space-around;
 }
 .main_header_menu__item {
   font-family: "nunito-light";
   letter-spacing: 1.3;
-  padding-left: 30px;
+  padding-left: calc(3px + 1vw);
   font-size: 18px;
   color: white;
 }
@@ -150,28 +168,9 @@ body {
   transform: scale(3.4, 2.1);
 }
 
-@media (max-width: 1200px) {
-  .main_header_content {
-    flex-direction: column;
-  }
-
-  .main_header_menu {
-    margin: 20 0;
-    width: 90%;
-  }
-}
-@media (max-width: 940px) {
-  .main_header_menu {
+@media (max-width: 1000px) {
+  .main_header_wrapper {
     display: none;
-  }
-
-  .main_header_burger {
-    display: block;
-  }
-
-  .main_header_menu {
-    margin: 20 0;
-    width: 90%;
   }
 }
 .main_page_main_slider {
@@ -235,7 +234,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   background-color: black;
   z-index: 200;
@@ -699,4 +698,87 @@ body {
   .footer_block3 {
     width: 100%;
   }
+}
+.standart_header_wrapper {
+  height: 100px;
+  background-color: #1c2026;
+  padding: 0 20;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .standart_header_wrapper {
+    display: none;
+  }
+}
+.header_mobile {
+  position: sticky;
+  top: 0;
+  background-color: #1c2026;
+  margin: 0;
+  height: 48px;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+}
+
+.header_mobile_logo__img {
+  max-height: 95px;
+  max-width: 100px;
+}
+.header_mobile_logo__img img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.header_mobile_burger {
+  margin-right: 5px;
+}
+
+@media (max-width: 1000px) {
+  .header_mobile {
+    display: flex !important;
+  }
+}
+.degustation_container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 40px auto;
+}
+
+.deg_title {
+  font-size: calc(12px + 1vw);
+  font-family: "nunito-semibold";
+}
+
+.booking_container {
+  text-align: center;
+  padding: 20 0;
+  margin: 10 0;
+}
+
+.booking_button {
+  font-family: "nunito-semibold";
+  font-size: calc(14px + 0.3vw);
+  letter-spacing: 1.1;
+  border-radius: 25px;
+  color: white;
+  background-color: #172424;
+  padding: 10 25;
+  box-shadow: 0px 7px 20px -8px black;
+  transition: all 0.3s;
+}
+.booking_button:hover {
+  background-color: #7CFC00;
+  color: black;
+}
+
+.about_us_text {
+  margin: 20 0;
+  line-height: calc(22px + 0.5vw);
+  font-size: calc(15px + 0.3vw);
 }

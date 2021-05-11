@@ -1,6 +1,13 @@
 @import './vars.scss';
 @import './fonts.scss';
 
+
+.def_width {
+    max-width: 1200px;
+    margin: 20 auto;
+    width: 90%;
+}
+
 .center {
     text-align: center;
 }
@@ -71,8 +78,13 @@ body {
     width: 100%;
     margin: 0px auto;
 }
+.main_header_content.standart {
+    // height: 90%;
+    width: 90%;
+    margin: auto;
+}
 .main_header_logo {
-    width: 30%;
+    width: 20%;
     width: 70px;
     img {
         max-height: 100%;
@@ -80,14 +92,20 @@ body {
         object-fit: contain;
     }
 }
+.main_header_logo.standart {
+    height: 90%;
+    img {
+        max-height: 85%;
+    }
+}
 .main_header_menu {
-    width: 70%;
+    width: 75%;
     display: flex;
     justify-content: space-around;
     &__item {
         font-family: $main-font-light;
         letter-spacing: 1.3;
-        padding-left: 30px;
+        padding-left: calc(3px + 1vw);
         font-size: 18px;
         color: white;
     }
@@ -104,27 +122,30 @@ body {
     }
 }
 
-@media (max-width: 1200px) {
-    .main_header_content {
-        flex-direction: column;
-    }
-    .main_header_menu {
-        margin: 20 0;
-        width: 90%;
-    }
-}
-@media (max-width: 940px) {
-    .main_header_menu {
+@media (max-width: 1000px) {
+    .main_header_wrapper {
         display: none;
     }
-    .main_header_burger {
-        display: block;
-    }
-    .main_header_menu {
-        margin: 20 0;
-        width: 90%;
-    }
+    // .main_header_content {
+    //     flex-direction: column;
+    // }
+    // .main_header_menu {
+    //     margin: 20 0;
+    //     width: 90%;
+    // }
 }
+// @media (max-width: 940px) {
+//     .main_header_menu {
+//         display: none;
+//     }
+//     .main_header_burger {
+//         display: block;
+//     }
+//     .main_header_menu {
+//         margin: 20 0;
+//         width: 90%;
+//     }
+// }
 
 
 // eof header
@@ -193,7 +214,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100% !important;
     height: 100%;
     background-color: black;
     z-index: 200;
@@ -675,3 +696,96 @@ body {
     }
 }
 // eof footer
+// standart header
+
+.standart_header_wrapper {
+    height: 100px;
+    background-color: #1c2026;
+    padding: 0 20;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 1000px) {
+    .standart_header_wrapper {
+        display: none;
+    }
+}
+
+// header mobile 
+.header_mobile {
+    position: sticky;
+    top: 0;
+    background-color: #1c2026;
+    margin: 0;
+    height: 48px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.header_mobile_logo {
+    &__img {
+        max-height: 95px;
+        max-width: 100px;
+        img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.header_mobile_burger {
+    margin-right: 5px;
+}
+@media (max-width: 1000px) {
+    .header_mobile {
+        display: flex !important;
+    }
+}
+// eof header mobile
+
+// degustation
+.degustation_container {
+    max-width: 1200px;
+    width: 90%;
+    margin: 40px auto;
+}
+.deg_title {
+    font-size: calc(12px + 1vw);
+    font-family: $main-medium;
+    
+}
+// eof degustation
+
+// booking button
+.booking_container {
+    text-align: center;
+    padding: 20 0;
+    margin: 10 0;
+}
+.booking_button {
+    font-family: $main-medium;
+    font-size: calc(14px + 0.3vw);
+    letter-spacing: 1.1;
+    border-radius: 25px;
+    color: white;
+    background-color: #172424;
+    padding: 10 25;
+    box-shadow: 0px 7px 20px -8px black;
+    transition: all 0.3s;
+    &:hover {
+        background-color: $main-color;
+        color: black;
+    }
+}
+
+// eof booking button
+
+// about us page
+.about_us_text {
+    margin: 20 0;
+    line-height: calc(22px + 0.5vw);
+    font-size: calc(15px + 0.3vw);
+}
+// eof about us page
