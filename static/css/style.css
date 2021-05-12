@@ -194,6 +194,7 @@ body {
 }
 
 .main_slider_text {
+  max-width: 1100px;
   position: absolute;
   left: 10%;
   top: 42%;
@@ -203,6 +204,11 @@ body {
 .main_slider_text__title {
   margin-bottom: 10px;
   font-size: calc(20px + 2vw);
+  font-family: "nunito-semibold";
+}
+.main_slider_text__title2 {
+  margin-bottom: 10px;
+  font-size: calc(14px + 1vw);
   font-family: "nunito-semibold";
 }
 .main_slider_text__subtitle {

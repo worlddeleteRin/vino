@@ -169,6 +169,7 @@ body {
     }
 }
 .main_slider_text {
+    max-width: 1100px;
     position: absolute;
     left: 10%;
     top: 42%;
@@ -177,6 +178,11 @@ body {
     &__title {
         margin-bottom: 10px;
         font-size: calc(20px + 2vw);
+        font-family: $main-medium;
+    }
+    &__title2 {
+        margin-bottom: 10px;
+        font-size: calc(14px + 1vw);
         font-family: $main-medium;
     }
     &__subtitle {
