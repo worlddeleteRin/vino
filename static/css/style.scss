@@ -37,6 +37,9 @@
 .padding10 {
     padding: 10 0;
 }
+.padding5 {
+    padding: 5 0;
+}
 .white {
     color: white;
 }
@@ -503,7 +506,8 @@ body {
     display: flex;
 }
 .third_container_category {
-    padding: 5 calc(11px + 1vw);
+    padding: 5 calc(3px + 2vw);
+    font-size: calc(11px + 0.4vw);
 }
 .third_container_category.active {
     background-color: $main-color;
@@ -535,6 +539,20 @@ body {
             }
         }
     }
+}
+
+.third_container_button {
+    text-align: center;
+    margin: 30 0;
+    a {
+        font-family: $main-medium;
+        border-radius: 25px;
+        text-transform: uppercase;
+        color: black;
+        background-color: $main-color;
+        padding: 7px calc(14px + 4vw);
+        font-size: calc(13px + 0.4vw);
+    }   
 }
 
 @media (max-width: 940px) {
