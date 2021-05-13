@@ -38,6 +38,13 @@
   font-family: "nunito-extrabold";
   src: url("../fonts/Nunito-ExtraBold.ttf");
 }
+.text_style_1 {
+  margin: 0 4;
+  background-color: #7CFC00;
+  padding: 1 12;
+  border-radius: 99px;
+}
+
 .def_width {
   max-width: 1200px;
   margin: 20 auto;
@@ -425,7 +432,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   position: relative;
-  margin: 110 0;
   padding: 100 0;
 }
 .second_container__background {
@@ -806,4 +812,10 @@ body {
   margin: 20 0;
   line-height: calc(22px + 0.5vw);
   font-size: calc(15px + 0.3vw);
+}
+
+.first_container_text {
+  margin: calc(4px + 2vw) 0;
+  font-size: calc(13px + 0.7vw);
+  font-family: "nunito-regular";
 }
