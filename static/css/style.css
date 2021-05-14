@@ -38,6 +38,10 @@
   font-family: "nunito-extrabold";
   src: url("../fonts/Nunito-ExtraBold.ttf");
 }
+.main_medium {
+  font-family: "nunito-semibold";
+}
+
 .text_style_1 {
   margin: 0 4;
   background-color: #7CFC00;
@@ -204,7 +208,7 @@ body {
   max-width: 1100px;
   position: absolute;
   left: 10%;
-  top: 42%;
+  top: 30%;
   z-index: 3;
   color: white;
 }
@@ -234,8 +238,6 @@ body {
   background-color: #172424;
   color: white;
   padding: 20;
-  width: 30px;
-  height: 30px;
 }
 .main_slider_navigation__button:hover {
   background-color: #7CFC00;
