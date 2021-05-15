@@ -38,3 +38,7 @@
   font-family: "nunito-extrabold";
   src: url("../fonts/Nunito-ExtraBold.ttf");
 }
+@font-face {
+  font-family: "gothic-medium";
+  src: url("../fonts/gothic.ttf");
+}

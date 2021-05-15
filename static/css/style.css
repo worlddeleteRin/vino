@@ -38,13 +38,29 @@
   font-family: "nunito-extrabold";
   src: url("../fonts/Nunito-ExtraBold.ttf");
 }
+@font-face {
+  font-family: "gothic-medium";
+  src: url("../fonts/gothic.ttf");
+}
+.gothic {
+  font-family: "gothic-medium" !important;
+}
+
+.bg_main_second {
+  background-color: maroon;
+}
+
+.bg_main_color {
+  background-color: saddlebrown;
+}
+
 .main_medium {
   font-family: "nunito-semibold";
 }
 
 .text_style_1 {
   margin: 0 4;
-  background-color: #7CFC00;
+  background-color: saddlebrown;
   padding: 1 12;
   border-radius: 99px;
 }
@@ -60,8 +76,8 @@
 }
 
 .title_big {
+  font-family: "gothic-medium" !important;
   font-size: calc(23px + 1.4vw);
-  font-family: "nunito-bold";
 }
 
 .main_text {
@@ -167,7 +183,6 @@ body {
 }
 .main_header_menu__item {
   font-family: "nunito-light";
-  letter-spacing: 1.3;
   padding-left: calc(3px + 1vw);
   font-size: 18px;
   color: white;
@@ -240,7 +255,7 @@ body {
   padding: 20;
 }
 .main_slider_navigation__button:hover {
-  background-color: #7CFC00;
+  background-color: saddlebrown;
 }
 
 @media (max-width: 500px) {
@@ -375,7 +390,7 @@ body {
   background-color: black;
 }
 .image_video_container__play svg {
-  color: #7CFC00 !important;
+  color: saddlebrown !important;
 }
 
 .main_video_wrapper {
@@ -531,8 +546,8 @@ body {
 }
 
 .third_container_category.active {
-  background-color: #7CFC00;
-  color: black;
+  background-color: saddlebrown;
+  color: white;
   border-radius: 25px;
 }
 
@@ -571,8 +586,8 @@ body {
   font-family: "nunito-semibold";
   border-radius: 25px;
   text-transform: uppercase;
-  color: black;
-  background-color: #7CFC00;
+  color: white;
+  background-color: saddlebrown;
   padding: 7px calc(14px + 4vw);
   font-size: calc(13px + 0.4vw);
 }
@@ -677,7 +692,7 @@ body {
   height: 20px;
 }
 .footer_menu__item:hover {
-  color: #7CFC00;
+  color: saddlebrown;
 }
 
 .footer_socials {
@@ -695,7 +710,7 @@ body {
   stroke: white;
 }
 .footer_socials__icon:hover {
-  background-color: #7CFC00;
+  background-color: saddlebrown;
 }
 .footer_socials__icon:hover svg {
   fill: black;
@@ -806,8 +821,8 @@ body {
   transition: all 0.3s;
 }
 .booking_button:hover {
-  background-color: #7CFC00;
-  color: black;
+  background-color: saddlebrown;
+  color: white;
 }
 
 .about_us_text {
