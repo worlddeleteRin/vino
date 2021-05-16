@@ -212,7 +212,7 @@ body {
 .main_page_main_slider_slide {
   width: 100% !important;
 }
-.main_page_main_slider_slide img {
+.main_page_main_slider_slide .slider_main_image {
   width: 100%;
   height: 100%;
   filter: brightness(50%);
