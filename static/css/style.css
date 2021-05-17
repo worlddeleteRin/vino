@@ -58,6 +58,10 @@
   font-family: "nunito-semibold";
 }
 
+.main_font {
+  font-family: "nunito-regular";
+}
+
 .text_style_1 {
   margin: 0 4;
   background-color: saddlebrown;
